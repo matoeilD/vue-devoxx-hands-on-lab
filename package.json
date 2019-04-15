@@ -1,0 +1,10 @@
+{
+  "name": "vue-devoxx-hands-on-lab",
+  "private": true,
+  "scripts": {
+    "start": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "^3.13.2"
+  }
+}
