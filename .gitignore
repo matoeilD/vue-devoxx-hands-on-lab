@@ -74,3 +74,8 @@ typings/
 # Serverless directories
 .serverless
 
+node_modules/
+lerna-debug.log
+npm-debug.log
+packages/*/lib
+.idea

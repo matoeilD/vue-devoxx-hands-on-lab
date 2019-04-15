@@ -2,7 +2,7 @@
 
 ## Buts
 
-Le but principal de cet exercice est de vous montrer comment **intégrer Vue.js dans une application existante** et d'écrire **votre premier composant**.
+Le but principal de cet exercice est de vous montrer comment **intégrer Vue.js dans une application existante** et d'écrire **vos premiers composants**.
 
 Vous apprendrez également à:
 - Comprendre la différence entre les différents builds de Vue
