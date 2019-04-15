@@ -19,9 +19,14 @@ Vous apprendrez également à:
 
 <details>
  <summary><b>Afficher les astuces</b></summary>
-- Allez faire un tour sur la documentation officielle de Vue.js pour y trouver:
-  - Les liens de téléchargement et de versions hébergées sur un CDN: https://fr.vuejs.org/v2/guide/installation.html#Inclusion-directe-lt-script-gt
-  - La différence entre les builds: https://fr.vuejs.org/v2/guide/installation.html#Explication-des-differents-builds
+ 
+Allez faire un tour sur la <a href="https://fr.vuejs.org/v2/guide" target="_blank">documentation officielle de Vue.js</a> pour y trouver:
+
+<ul>
+<li> Les liens de téléchargement et de versions hébergées sur un CDN
+<li> La différence entre les builds
+</ul>
+  
 </details>
 
 ## Exercice 1.2
