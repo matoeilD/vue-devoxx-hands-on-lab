@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Hello App!</h1>
+      <!-- route outlet -->
+      <router-view></router-view>
+    </div>
+
+    <script>
+      // and then call `Vue.use(VueRouter)`.
+
+      // 1. Define route components.
+      // These can be imported from other files
+      const Foo = { template: "<div>foo</div>" };
+      const Bar = { template: "<div>bar</div>" };
+      const Tabs = {
+        template: `
+        <div>
+            <v-tabs
+              fixed-tabs
+              color="cyan"
+              dark
+              slider-color="yellow"
+            >
+                <v-tab to="/tabs/foo">Foo</v-tab>
+                <v-tab to="/tabs/bar">Bar</v-tab>
+            </v-tabs>
+            <router-view></router-view>
+        </div>
+    `
+      };
+
+      const routes = [
+        { path: "/", redirect: "/tabs" },
+        {
+          path: "/tabs",
+          component: Tabs,
+          children: [
+            {
+              path: "foo",
+              name: "foo",
+              component: Foo
+            },
+            {
+              path: "bar",
+              name: "bar",
+              component: Bar
+            }
+          ]
+        }
+      ];
+
+      const router = new VueRouter({
+        routes
+      });
+
+      const app = new Vue({
+        router
+      }).$mount("#app");
+    </script>
+  </body>
+</html>

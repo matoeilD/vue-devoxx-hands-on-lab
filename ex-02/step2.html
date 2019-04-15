@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Hello App!</h1>
+      <p>
+        <router-link to="/foo">Go to Foo</router-link>
+        <router-link to="/bar">Go to Bar</router-link>
+      </p>
+      <router-view></router-view>
+      <router-view name="bar"></router-view>
+      <router-view name="foo"></router-view>
+    </div>
+    <script>
+      const Foo = { template: "<div>foo</div>" };
+      const FooB = { template: "<div>foo</div>" };
+      const Bar = { template: "<div>bar</div>" };
+      const BarB = { template: "<div>bar</div>" };
+
+      const routes = [
+        {
+          path: "/foo",
+          components: {
+            default: Foo,
+            foo: FooB
+          }
+        },
+        {
+          path: "/bar",
+          components: {
+            default: Bar,
+            bar: BarB
+          }
+        }
+      ];
+
+      // 3. Create the router instance and pass the `routes` option
+      // You can pass in additional options here, but let's
+      // keep it simple for now.
+      const router = new VueRouter({
+        routes // short for `routes: routes`
+      });
+
+      // 4. Create and mount the root instance.
+      // Make sure to inject the router with the router option to make the
+      // whole app router-aware.
+      const app = new Vue({
+        router
+      }).$mount("#app");
+
+      // Now the app has started!
+    </script>
+  </body>
+</html>
