@@ -4,7 +4,7 @@ Vous trouverez ici le code des exercices pour le hands-on lab sur Vue.js présen
 
 ## Liens
 
-- [Description complète vers le programme](https://cfp.devoxx.fr/2019/talk/PFP-5420/Introduction_a_Vue.js_%E2%80%93%C2%A0Le_framework_JavaScript_progressif)
+- [Description complète dans le programme](https://cfp.devoxx.fr/2019/talk/PFP-5420/Introduction_a_Vue.js_%E2%80%93%C2%A0Le_framework_JavaScript_progressif)
 - [Slides](https://docs.google.com/presentation/d/12pfu1YrhvIRSWL4v-Gnt1KiZ8O90_V-2EGfzn-1fWOU/edit?usp=sharing)
 
 ## Prérequis
