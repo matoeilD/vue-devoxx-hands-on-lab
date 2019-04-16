@@ -18,34 +18,55 @@
     <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
   </head>
   <body>
-    <div id="app">
-      <h1>Hello App!</h1>
-      <!-- route outlet -->
+    <v-app id="app">
+      <v-toolbar color="cyan" tabs dark>
+        <v-toolbar-side-icon></v-toolbar-side-icon>
+        <v-toolbar-title>Hello Devoxx!</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-btn icon>
+          <v-icon>more_vert</v-icon>
+        </v-btn>
+      </v-toolbar>
       <router-view></router-view>
-    </div>
+    </v-app>
 
     <script>
-      // and then call `Vue.use(VueRouter)`.
-
-      // 1. Define route components.
-      // These can be imported from other files
-      const Foo = { template: "<div>foo</div>" };
-      const Bar = { template: "<div>bar</div>" };
+      const Foo = {
+        template: `
+          <v-card>
+            <v-card-text>Foo tab content</v-card-text>
+          </v-card>`
+      };
+      const Bar = {
+        template: `
+          <v-card>
+            <v-card-text>Bar tab content</v-card-text>
+          </v-card>`
+      };
       const Tabs = {
         template: `
         <div>
             <v-tabs
-              fixed-tabs
-              color="cyan"
+              centered
               dark
+              color="cyan"
               slider-color="yellow"
             >
                 <v-tab to="/tabs/foo">Foo</v-tab>
                 <v-tab to="/tabs/bar">Bar</v-tab>
             </v-tabs>
-            <router-view></router-view>
+            <v-tabs-items>
+              <v-tab-item>
+                <v-content>
+                <router-view></router-view>
+                </v-content>
+              </v-tab-item>
+            </v-tabs-items>
         </div>
-    `
+        `,
+        data: () => ({
+          model: "foo"
+        })
       };
 
       const routes = [

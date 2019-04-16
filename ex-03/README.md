@@ -67,14 +67,30 @@ Let's see our scaffolded project:
 
 We can save our configuration and reuse it for another project.
 
-This configured project can be modified and we can for example add a plugin:
+This configured project can be modified and we can, for example, add a plugin:
 
 ```
     $ vue add vuetify
 ```
 
-let's check what has happened.
+What has happened?
+
+- The plugin has been installed
+- A wizard proposed a few options
+- The scaffolded project has been modified.
+
+Notice that the whole project configuration was taken into consideration and updated.
 
 ## Step 4
 
-Let's explore the Vue GUI: `$ vue ui`.
+Sometimes it might be easier, or for teams that are more used to visual environnement, Vue.js CLI offers a GUI.
+
+It can be explored by just launching it from the console: `$ vue ui`.
+
+With it you can:
+
+- edit configuration
+- edit PWA features
+- launch commands (build, serve, lint, etc.)
+- add/update plugins
+- etc.

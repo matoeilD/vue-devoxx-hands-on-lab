@@ -18,19 +18,36 @@
     <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
   </head>
   <body>
-    <div id="app">
-      <h1>Hello App!</h1>
-      <p>
-        <router-link to="/foo">Go to Foo</router-link>
-        <router-link to="/bar">Go to Bar</router-link>
-        <router-link to="/tabs">show</router-link>
-      </p>
+    <v-app id="app">
+      <v-toolbar color="cyan" tabs dark>
+        <v-toolbar-side-icon></v-toolbar-side-icon>
+        <v-toolbar-title>Hello Devoxx!</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-toolbar-items>
+          <v-btn flat to="/foo">Go to Foo</v-btn>
+          <v-btn flat to="/bar">Go to Bar</v-btn>
+          <v-btn flat to="/tabs">Show Tabs</v-btn>
+        </v-toolbar-items>
+        <v-btn icon>
+          <v-icon>more_vert</v-icon>
+        </v-btn>
+      </v-toolbar>
       <router-view></router-view>
-    </div>
+    </v-app>
 
     <script>
-      const Foo = { template: "<div>foo</div>" };
-      const Bar = { template: "<div>bar</div>" };
+      const Foo = {
+        template: `
+          <v-card>
+            <v-card-text>Foo tab content</v-card-text>
+          </v-card>`
+      };
+      const Bar = {
+        template: `
+          <v-card>
+            <v-card-text>Bar tab content</v-card-text>
+          </v-card>`
+      };
       const Tabs = {
         template: `
                 <div>
