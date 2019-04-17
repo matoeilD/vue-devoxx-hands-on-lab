@@ -1,8 +1,19 @@
-# ex-03 Vue CLI
+# Exercice 3 - Vue CLI
 
-## Step 1
+Cet exercice à pour but de faire découvrir la CLI de Vue. C'est un outil qui permet de simplifier beaucoup la configuration d'un projet.
 
-Install vue CLI, this needs to be done globally in order to be able to invoke the `vue` command from anywhere.
+Vous apprendrez également à:
+
+- prototyper un composant
+- générer un projet
+- ajouter un plugin
+- utiliser l'UI qui accompagne cet CLI.
+
+## Etape 1
+
+- [ ] installation de la CLI
+
+Cette installation doit se faire de manière globale pour que la commande `vue` puisse être invoquée de partout.
 
 ```
     npm install -g @vue/cli
@@ -10,7 +21,7 @@ Install vue CLI, this needs to be done globally in order to be able to invoke th
     yarn global add @vue/cli
 ```
 
-Check that everything works as expected by invoking the `vue` command. A help screen should be displayed.
+Contrôlez que tout se s'est bien passé en invoquant la commande `vue`. Un écran d'aide devrait s'afficher.
 
 ```
 Options:
@@ -34,63 +45,65 @@ Commands:
 
 ```
 
-## Step 2
+## Etape 2
 
-Let's prototype a vue component. First we create a `.vue` file, then we serve it, and finally we can prototype a component with no overhead.
+- [ ] créer un fichier `.vue` (easy :))
+- [ ] prototypage d'un composant vue
+- [ ] servir un fichier
 
 1. `$ touch step2.vue`
 2. `$ vue serve step2.vue`
-3. Probably a dependency will be missing, install it: `$ npm install -g @vue/cli-service-global`
+3. Une dépendance va sûrement manquer: `$ npm install -g @vue/cli-service-global`
 
-We can now prototype:
+Nous pouvons maintenant prototyper.
 
-1. Add a `<template>` tag
-2. Add a script, and play with hot reloading that comes out of the box
-3. We can even style our component.
+- [ ] Ajout d'une balise `<template>`
+- [ ] Ajout d'une balise script. Jouons avec le "hot reloading"
+- [ ] Ajout de style
 
-Styling can be done in pure CSS or using a preprocessor. The `<style>` tag can take an attribute `lang="saas"`
+On peut ajouter du style avec de la CSS ou un préprocesseur. La balise `<style>` peut prendre un attribut `lang="saas"`
 
-## Step 3
+## Etape 3
 
-Vue CLI can help you create a full project.
+- [ ] Créer un projet complet
 
 ```
     $ vue create step3
 ```
 
-The wizard will guide us through configuration steps, to have a starter project with everything we need configured out of the box.
+L'assistant va nous guider à travers quelques étape pour que nous puissions configurer le projet selon nos goûts.
 
-Let's see our scaffolded project:
+Regardons notre projet:
 
 1. `$ cd step3`
 2. `$ npm run serve`
 
-We can save our configuration and reuse it for another project.
+Si besoin est ou pour une équipe qui fait beaucoup de projet. La configuration choisie peut être sauvegardée pour être réutilisée plus tard.
 
-This configured project can be modified and we can, for example, add a plugin:
+Nous pouvons aussi très simplement installer et configurer un projet.
 
 ```
     $ vue add vuetify
 ```
 
-What has happened?
+Que s'est-il passé?
 
-- The plugin has been installed
-- A wizard proposed a few options
-- The scaffolded project has been modified.
+- Le plugin a été installé
+- Des options nous ont été proposée
+- Le projet que nous avions créé a été modifié.
 
-Notice that the whole project configuration was taken into consideration and updated.
+Remarquez que la configuration de notre projet a été prise en compte et updatée.
 
-## Step 4
+## Etape 4
 
-Sometimes it might be easier, or for teams that are more used to visual environnement, Vue.js CLI offers a GUI.
+Il est certaines fois plus facile pour certaines équipe d'utiliser un environement visuel, c'est aussi pour cela que Vue CLI offre une GUI.
 
-It can be explored by just launching it from the console: `$ vue ui`.
+Elle peut-être démarrée de la manière suivante: `$ vue ui`.
 
-With it you can:
+La GUI permet:
 
-- edit configuration
-- edit PWA features
-- launch commands (build, serve, lint, etc.)
-- add/update plugins
+- d'éditer la configuration
+- d'éditer le manifeste de la PWA.
+- d'utiliser des commandes (build, serve, lint, etc.)
+- d'ajouter ou de mettre à jour des plugins
 - etc.

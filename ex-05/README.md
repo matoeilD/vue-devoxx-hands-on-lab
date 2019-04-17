@@ -1,24 +1,46 @@
-# ex-05 Vue.js devtools
+# Eercice 5 - devtools
 
-When the application is build for production, correct settings will be set and Vue.js devtools will not be available.
+Cet exercice à pour but d'explorer les devtools qui sont une extension pour les navigateur.
 
-## Step 1
-Install Vue.js devtools, it is a browser extension.
+Vous comprendrez comment:
 
-## Step 2
+- remonter le temps
+- explorer la performance
+- inspecter les composant vue
+- inspecter le routing de l'application
 
-Explore components, this is very useful when using libraries of components, you can discover which props are available and set them to see what is happening.
+Quand l'application est buildée pour la production les devtools ne seront pas disponibles (sécurité).
 
-Your app becomes an interactive documentation of sort.
+## Etape 1
 
-## Step 3
+- [ ] installation
+      Installation des devtools, c'est juste une extension de navigateur.
 
-Vuex store is available from the devtools, you can (now) edit it, but you can also see the whole history of states, therefore you can understand exactly the current state of your application and what lead to it.
+## Etape 2
 
-It is also possible to replay events, you can go back in time and replay everything.
+- [ ] exploration de composant
+- [ ] découvrir des propriété de composants venant d'une librairie
 
-## Step 4
+Explorons les composant d'une application. Cela peut être très utile quand on utilise une librairie pour découvrir toutes les options possibles d'un composant.
 
-Explore the performance of your application, find out how much time a component took to load down to every step of the component life cycle.
+Il est aussi possible de modifier les valeurs d'une propriété.
 
-Check where you fall below 60 frames per second. Find out what was happening at that moment in the app.
+L'application devient une sorte de documentation interactive.
+
+## Etape 3
+
+- [ ] explore Vuex
+- [ ] rejouer des évènements
+
+De la même manière qu'il est possible d'explorer des composants, il est aussi possible d'explorer l'état du store Vuex et de le modifier.
+
+Mais il est aussi possible de rejouer des évènements donc de remonter dans le temps et de voir pourquoi l'application s'est retrouvée dans un état particulier.
+
+## Etape 4
+
+- [ ] performance d'un composant
+- [ ] performance de rendu de l'application
+
+Il est possible d'explorer les performances d'une application et de savoir combien de temps à pris un composant pour se charger et de voir toutes les étapes du cycle de vie du composant.
+
+Une information utile et de voir ce qui se passait au moment où l'application est passée en dessous de 60 frames par seconde.

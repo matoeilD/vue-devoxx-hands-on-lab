@@ -1,20 +1,53 @@
-# ex-02 Vue Router
+# Exercice 2 - Vue Router
 
-## Step 1
+## Buts
 
-Integrate routing in a simple `html` page. Configure routes, initialize the router and add a simple navigation. This can be achieved in a few lines of code.
+Cet exercice à pour but d'intégrer le routeur Vue.js dans une page html. Pour ensuite explorer des fonctionnalités comme l'utilisation de plusieurs routeur "outlets", l'utilisation de paramètres dans les routes et les routes imbriquées (nested routes).
 
-## Step 2
+Vous comprendrez également comment:
 
-Explore routers functionalities, for example it is possible to have more than one router outlet.
+- afficher un composant pour une route donnée
+- réutiliser des composants
+- utiliser une librairie de composant externe
 
-## Step 3
+## Etape 1
 
-With Vue router it is easy to add transitions, basically a few lines of CSS are needed and the router outlet needs to wrapped in the default `<transition>` component.
+- [ ] Charger le router Vue dans la page et son initialisation
+- [ ] Utilisation de `<router-link />` pour la navigation
+- [ ] Utilisation de `<router-view />`
 
-## Step 4
+<details>
+ <summary><b>Afficher les astuces</b></summary>
+ 
+Allez faire un tour sur la <a href="https://router.vuejs.org/fr/" target="_blank">documentation officielle du router Vue.js</a>
+  
+</details>
 
-Routes can be nested, and therefore many outlets can be nested too.
+## Etape 2
+
+- [ ] ajouts de plusieurs sortie (outlets) de routeur
+- [ ] nommage des vues
+
+Le routeur permet d'afficher plusieurs vues pour la même route ce qui peut être très pratique pour créer un sous menu par exemple.
+
+## Etape 3
+
+- [ ] ajout de transition avec le composant `<transition />`
+
+<details>
+ <summary><b>Afficher les astuces</b></summary>
+ 
+Allez faire un tour sur la <a href="https://router.vuejs.org/fr/guide/advanced/transitions.html#transition-par-route" target="_blank">documentation officielle du router Vue.js et des transitions</a>
+
+Ne pas oublier la CSS!
+
+</details>
+
+## Etape 4
+
+Les routes peuvent être imbriquée, du coup plusieurs vues peuvent aussi l'être.
+
+- [ ] ajout de routes enfants
 
 ```js
 // /route-a/route-b
@@ -22,7 +55,7 @@ Routes can be nested, and therefore many outlets can be nested too.
 
 const routes = [
   {
-    path: "/route-a/",
+    path: "/route-a",
     component: ComponentA,
     children: [
       {
@@ -38,10 +71,20 @@ const routes = [
 ];
 ```
 
-`ComponentA` has a router outlet which will render `ComponentB` or `ComponentC`, in turn, the rendered component will render its router outlet.
+Le `ComponentA` a une vue qui va afficher le `ComponentB` ou `ComponentC`, à son tour, le composant sélectionné va afficher sa vue.
 
-## Final Step
+## Etape finale
 
-The router has an API that can be accessed programmatically.
+Le routeur Vue peut aussi être utilisé de manière programmatique.
 
-Let's implement a next tab method.
+- [ ] Implémenation d'une méthode "next tab"
+- [ ] Implémentation d'une méthode "go back"
+
+<details>
+ <summary><b>Afficher les astuces</b></summary>
+ 
+Allez faire un tour sur la <a href="https://router.vuejs.org/fr/guide/essentials/navigation.html" target="_blank">documentation officielle du router Vue.js et la navigation programmatique</a>
+
+Ne pas oublier la CSS!
+
+</details>
