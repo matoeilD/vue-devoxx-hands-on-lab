@@ -21,3 +21,7 @@ git clone https://github.com/raphaelsaunier/vue-devoxx-hands-on-lab
 cd vue-devoxx-hands-on-lab
 npm install
 ```
+
+## Liste des exercices
+
+- []
