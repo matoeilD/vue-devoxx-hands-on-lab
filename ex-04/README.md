@@ -17,8 +17,8 @@ Dans cet exercice, nous allons nous pencher sur [Vuex](https://vuex.vuejs.org/),
 
 ## Exercice 4.4
 
-- Remplacer les `this.$store.state` et les `this.$store.dispatch` par les helpers `mapState`, `mapActions`
+- [ ] Remplacer les `this.$store.state` et les `this.$store.dispatch` par les helpers `mapState`, `mapActions`
 
 ## Exercice 4.5
 
-- Implémenter un getter dynamique pour une fonction de recherche
+- [ ] Implémenter un getter dynamique pour une fonction de recherche
