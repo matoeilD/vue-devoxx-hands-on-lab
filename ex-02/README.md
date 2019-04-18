@@ -26,7 +26,7 @@ Allez faire un tour sur la <a href="https://router.vuejs.org/fr/" target="_blank
 
 ## Etape 2
 
-- [ ] ajouts de plusieurs sortie (outlets) de routeur
+- [ ] ajouts de plusieurs sorties (outlets) de routeur
 - [ ] nommage des vues
 
 Le routeur permet d'afficher plusieurs vues pour la même route ce qui peut être très pratique pour créer un sous menu par exemple.
@@ -49,6 +49,7 @@ Ne pas oublier la CSS!
 Les routes peuvent être imbriquée, du coup plusieurs vues peuvent aussi l'être.
 
 - [ ] ajout de routes enfants
+- [ ] utilisation d'une librarie de composant
 
 ```js
 // /route-a/route-b
