@@ -4,21 +4,29 @@
       <h1 class="display-4">PFP-5420 Introduction à Vue.js</h1>
     </header>
     <bootstrap-loader v-if="$store.state.isLoading" />
-    <div v-for="post in $store.state.posts" :key="post.id" class="post mb-5">
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.body }}</p>
+    <article
+      v-for="post in $store.state.posts"
+      :key="post.id"
+      class="post mb-5"
+    >
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.body }}</p>
+      <footer>
+        <article-reactions />
+      </footer>
       <router-link :to="{ name: 'post', params: { postId: post.id } }">
         Read More…
       </router-link>
-    </div>
+    </article>
   </div>
 </template>
 
 <script>
 import BootstrapLoader from "../components/BootstrapLoader";
+import ArticleReactions from "../components/ArticleReactions";
 export default {
   name: "index",
-  components: { BootstrapLoader },
+  components: { ArticleReactions, BootstrapLoader },
   mounted() {
     this.$store.dispatch("fetchPosts");
   }
