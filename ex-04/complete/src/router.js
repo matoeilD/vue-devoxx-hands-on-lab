@@ -15,9 +15,10 @@ export default new Router({
       component: Index
     },
     {
-      path: "/about",
-      name: "about",
-      component: Post
+      path: "/post/:postId",
+      name: "post",
+      component: Post,
+      props: true
     }
   ]
 });

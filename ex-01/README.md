@@ -27,7 +27,6 @@ Allez faire un tour sur la <a href="https://fr.vuejs.org/v2/guide" target="_blan
 <li> Les liens de téléchargement et de versions hébergées sur un CDN
 <li> La différence entre les builds
 </ul>
-  
 </details>
 
 ## Exercice 1.2
