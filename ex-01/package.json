@@ -1,10 +1,10 @@
 {
   "name": "ex-01",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon index.js -e js,html"
+    "start": "nodemon app.js -e js,html"
   },
   "dependencies": {
     "axios": "^0.18.0",

@@ -14,8 +14,9 @@ Vous apprendrez également à:
 
 ## Exercice 1.1
 
+- [ ] Démarrer le serveur avec `npm start`
 - [ ] Charger Vue.js dans la page
-- [ ] Insérer un composant `<reaction-button />` à la fin du premier article (n.b. vous pouvez le définir soit dans `app.twig.html` ou dans `reactions.js` – nous comparerons les deux approches)
+- [ ] Insérer un composant `<reaction-button />` dans le `<footer>` du premier article (n.b. vous pouvez le définir soit dans `app.twig.html` ou dans `reactions.js` – nous comparerons les deux approches)
 
 <details>
  <summary><b>Afficher les astuces</b></summary>
@@ -33,7 +34,7 @@ Allez faire un tour sur la <a href="https://fr.vuejs.org/v2/guide" target="_blan
 
 - [ ] Définir les composants suivants:
   - [ ] `<article-reactions />` qui prend un tableau de réactions possibles en propriété
-  - [ ] `<reaction-button />` qui est instancié pour chaque composant
+  - [ ] `<reaction-button />` qui est instancié pour chaque bouton
 
 ## Exercice 1.3
 
