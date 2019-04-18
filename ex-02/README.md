@@ -15,6 +15,7 @@ Vous comprendrez également comment:
 - [ ] Charger le router Vue dans la page et son initialisation
 - [ ] Utilisation de `<router-link />` pour la navigation
 - [ ] Utilisation de `<router-view />`
+- [ ] Passer des paramètres à une vue
 
 <details>
  <summary><b>Afficher les astuces</b></summary>
