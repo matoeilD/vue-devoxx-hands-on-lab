@@ -10,7 +10,7 @@
         transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
       }
       .slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active below version 2.1.8 */ {
+        /* .slide-fade-leave-active below version 2.1.8 */ {
         transform: translateX(10px);
         opacity: 0;
       }
@@ -36,21 +36,13 @@
         { path: "/bar", component: Bar }
       ];
 
-      // 3. Create the router instance and pass the `routes` option
-      // You can pass in additional options here, but let's
-      // keep it simple for now.
       const router = new VueRouter({
-        routes // short for `routes: routes`
+        routes
       });
 
-      // 4. Create and mount the root instance.
-      // Make sure to inject the router with the router option to make the
-      // whole app router-aware.
       const app = new Vue({
         router
       }).$mount("#app");
-
-      // Now the app has started!
     </script>
   </body>
 </html>

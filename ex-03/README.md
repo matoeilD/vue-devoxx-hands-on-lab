@@ -63,6 +63,20 @@ Nous pouvons maintenant prototyper.
 
 On peut ajouter du style avec de la CSS ou un préprocesseur. La balise `<style>` peut prendre un attribut `lang="saas"`
 
+Si nous choisissons d'utiliser un loader, il faudra l'installer:
+
+```
+# Sass
+npm install -D sass-loader sass
+
+# Less
+npm install -D less-loader less
+
+# Stylus
+npm install -D stylus-loader stylus
+
+```
+
 ## Etape 3
 
 - [ ] Créer un projet complet
