@@ -16,7 +16,17 @@ const initialiseReactionCounts = (reactionsObj, initialValue = 0) =>
     {}
   );
 
-// 1.4
-const getReactions = postId => {};
+// 1.4 & 1.5
 
-const submitReaction = (postId, reaction) => {};
+const database = firebase.database().ref("GLOBAL");
+const createdAt = firebase.database.ServerValue.TIMESTAMP;
+const incrementFirebaseValue = ref => ref.transaction(prev => (prev || 0) + 1);
+
+const getReactionsCount = async postId =>
+  (await database.child(`${postId}/summary`).once("value")).val();
+
+const submitReaction = (itemId, reaction) =>
+  Promise.all([
+    incrementFirebaseValue(database.child(`${itemId}/summary/${reaction}`)),
+    database.child(`${itemId}/reactions`).push({ reaction, createdAt })
+  ]);

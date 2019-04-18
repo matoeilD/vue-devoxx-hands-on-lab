@@ -37,6 +37,6 @@ app.get("/", async (req, res) => {
   const html = await view.render("app.twig.html", { posts });
   return res.send(html);
 });
-app.use(express.static('.'))
+app.use(express.static("."));
 
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));

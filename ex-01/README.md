@@ -41,8 +41,8 @@ Allez faire un tour sur la <a href="https://fr.vuejs.org/v2/guide" target="_blan
 
 ## Exercice 1.4
 
-- [ ] Récupérer le nombre de reactions pour chaque article lorsque <article-reactions /> est initialisé avec la fonction `getReactions(articleId)`
+- [ ] Récupérer le nombre de reactions pour chaque article lorsque <article-reactions /> est initialisé avec la fonction `getReactionsCount(postId)`
 
 ## Exercice 1.5
 
-- [ ] Envoyer la réaction lorsque l'utilisateur clique sur un bouton avec la fonction `submitReaction(articleId, reaction)`
+- [ ] Envoyer la réaction lorsque l'utilisateur clique sur un bouton avec la fonction `submitReaction(postId, reaction)`

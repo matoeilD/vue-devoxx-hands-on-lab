@@ -23,6 +23,7 @@
       {% for post in posts %}
       <article
         class="well mb-5 p-3 {% if loop.first %} first bg-secondary text-white {% endif %}"
+        data-id="{{post.id}}"
       >
         {% if loop.first %}
         <div class="text-white-50">Last Post</div>
@@ -42,10 +43,10 @@
           {% endverbatim %} {% endif %}
         </footer>
       </article>
-      {% endfor %}
-
+      {% endfor %} {% include 'firebase.twig.html' %}
       <script src="https://unpkg.com/vue"></script>
-      <script src="./reactions.js"></script>
+      <script src="./common.js"></script>
+      <script src="./complete/01.04/reactions.js"></script>
     </div>
   </body>
 </html>
