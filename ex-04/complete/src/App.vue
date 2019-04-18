@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <header>
+    <header class="py-3">
       <nav>
         <div id="nav" class="container">
           <router-link to="/">Home</router-link>
         </div>
       </nav>
     </header>
-    <router-view/>
+    <router-view class="container"/>
   </div>
 </template>
 
